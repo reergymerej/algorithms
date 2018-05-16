@@ -1,0 +1,14 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jeremy Greer <jex.grizzle@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "repository": "git@github.com:reergymerej/algorithms.git"
+}
