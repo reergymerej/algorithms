@@ -59,3 +59,36 @@ result.
 
 ### Heap Sort
 
+Binary Tree - tree data structure where each node has 0 - 2 children
+
+Complete Binary Tree - every level (except possibly the last) is full, all nodes
+as far left as possible
+
+Heap - Tree data structure following "heap property" rule
+  * max heap - parent node values are >= children values
+  * min heap - parent node values are <= children values
+
+Binary Heap - Heap as a complete binary tree
+
+
+It is an improved "selection sort," so let's do that first.
+
+**TODO**
+
+
+* https://www.geeksforgeeks.org/heap-sort/
+* http://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html
+* https://en.wikipedia.org/wiki/Heap_(data_structure)
+* https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html
+
+
+### Selection Sort
+
+* Divide list by sorted (0 initially), and unsorted.
+* Walk through unsorted looking for lowest/highest value
+* Once found, move to the end of the sorted items
+* Repeat until unsorted list is empty
+
+This is how I used to sort cards as a kid.
+
+* https://en.wikipedia.org/wiki/Selection_sort
