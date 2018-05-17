@@ -1,26 +1,29 @@
 const quickSort = (a) => {
-  // pick a pivot (various strategies)
-  const pivot = a[a.length - 1]
-
-  // while left < right
-  let left = 0
-  // TODO: handle short arrays
-  let right = a.length - 2
-
-  let x = 0
-  // find left > than pivot
-  while (a[left] < pivot) {
-    left++
+  if (!a.length) {
+    return a
+  } else if (a.length === 1) {
+    return a
   }
-  console.log(a[left], 'greater than', pivot)
 
-  // find right < than pivot
-  while (a[right] > pivot) {
-    right++
+  const pivotIndex = a.length - 1
+  const pivot = a[pivotIndex]
+  let index = 0
+  const leftSide = []
+  const rightSide = []
+
+  while (index < pivotIndex) {
+    const value = a[index]
+    if (value < pivot) {
+      leftSide.push(value)
+    } else {
+      rightSide.push(value)
+    }
+    index++
   }
-  console.log(a[right], 'less than', pivot)
 
-
+  const sortedLeft = quickSort(leftSide)
+  const sortedRight = quickSort(rightSide)
+  return sortedLeft.concat(pivot, sortedRight)
 }
 
 module.exports = quickSort
