@@ -36,7 +36,6 @@ const mergeSort = (a) => {
     const sortedLeft = mergeSort(left)
     const sortedRight = mergeSort(right)
 
-    // merge
     return merge(sortedLeft, sortedRight)
   } else {
     return a
